@@ -1,0 +1,66 @@
+body {
+      background-color: #c2a894;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+}
+
+h1 {
+    font-size: 82px;
+    font-weight: 800;
+}
+
+h4 {
+    font-size: 25px;
+    font-weight: 500;
+}
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fffff0;
+  padding: 10px 10px;
+}
+
+.wrap-logo {
+  display: flex;
+  align-items: center;
+
+}
+
+header a {
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  font-weight: 800
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  background-color: #8b6c62;
+  color: white;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  }
+.btn:hover {background-color: #b29a36;}
+
+#rectangle {
+          background: #FBC02D;
+          position : absolute; ;
+          top: 130px;
+          left: 970px;
+          width: 760px;
+          height: 740px;
+          border-radius: 24px;}
+

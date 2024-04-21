@@ -1,0 +1,87 @@
+body {
+      background-color: #fffff0;
+      color: white;
+      font-family: 'Montserrat', sans-serif;
+}
+
+h1 {font-size: 38px;
+    font-weight: bold;}
+
+
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  background-color: #fffff0;
+  padding: 10px 10px;
+}
+
+.wrap-logo {
+  display: flex;
+  align-items: center;
+
+}
+
+header a {
+  color: black;
+  padding: 12px;
+  text-decoration: none;
+  font-size: 18px;
+  border-radius: 4px;
+  font-weight: 800
+}
+
+header a.logo {
+  font-size: 25px;
+  font-weight: bold;
+}
+
+header a:hover {
+  background-color: #8b6c62;
+  color: white;
+
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.gallery img {
+  width: 100px;
+  height: auto;
+  cursor: pointer;
+}
+
+
+nav {
+  display: flex;
+  align-items: center;
+  }
+
+.carousel-item { height: 600px;
+
+
+}
+.item, img { position: absolute;
+             object-fit: hover;
+             height: 80%;
+             width: 60%;
+             margin-left: auto;
+             margin-right: auto;
+             }
+
+
+.carousel-inner {height: 80%;
+             width: 60%;
+             margin-left: auto;
+             margin-right: auto;
+            }
+.carousel-control-prev, .carousel-control-next {
+             width: 50%;
+             margin-left: auto;
+             margin-right: auto;}
+
+
