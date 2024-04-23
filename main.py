@@ -31,9 +31,21 @@ def recommend():
     return render_template('recommend.html', title='Полезные советы')
 
 
-@app.route('/form')
+@app.route('/form', methods=["GET", "POST"])
 def form():
+    name = request.form.get('name')
+    email = request.form.get('email')
+    save_text(name, email)
     return render_template('form.html', title='Форма обратной связи')
+
+
+def save_text(name, email):
+    print(name, email)
+# механизм  сохранения данных о пользоваетлях находится в разработке, но может выглядеть так
+#    with open('form.txt') as file:
+#        file.write(f'{name}, контактные данные: {email}')
+#        print(file.read())
+
 
 
 if __name__ == '__main__':

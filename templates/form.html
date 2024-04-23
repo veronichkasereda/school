@@ -3,9 +3,20 @@
         <head>
             <link rel="stylesheet" href="static/css/form.css"/>
             <title>{{ title }}</title>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
         </head>
         <body>
             {% include 'includes/header.html' %}
             <p>Форма обратной связи</p>
+            <h4 style="padding: 0px 170px;">Если вы заинтересовались работами, оставьте свои контактные данные</h4>
+            <form method="POST">
+                <p>Please enter your first  and last name:</p>
+                <input type="text" name="name" placeholder="Иванов Иван Иванович" required>
+                <input type="text" name="email" placeholder="ivanov@mail.ru или +7-911-111-11-11" required>
+                <button type="submit">Отправить</button>
+            </form>
         </body>
     </html>
