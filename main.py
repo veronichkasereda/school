@@ -41,11 +41,12 @@ def form():
 
 def save_text(name, email):
     print(name, email)
+
+
 # механизм  сохранения данных о пользоваетлях находится в разработке, но может выглядеть так
 #    with open('form.txt') as file:
 #        file.write(f'{name}, контактные данные: {email}')
 #        print(file.read())
-
 
 
 if __name__ == '__main__':
